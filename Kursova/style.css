@@ -1,0 +1,348 @@
+@font-face {
+    font-family: "Open Sans";
+    src:
+      url("./fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+      url("./fonts/OpenSans-Regular-webfont.woff") format("woff");
+  }
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans'
+}
+body{
+    background-color: rgba(25, 25, 25, 1);
+}
+#diskleimer, #header, #podcast, .podcast-content, .latestEpisodes-title, .card, #button-block, .card-content, .JacobPaulaner, .JacobPaulaner-content, .Subscribe-card, .Subscribe-input, #Reactions, .Reactions-card, #footer, .footer-links{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.podcast-content, .card-content, .JacobPaulaner-content, .Subscribe-input, .Reactions-card, .footer-links{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+#diskleimer{
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    color: #FFFFFF;
+}
+#diskleimer button{
+    padding: 5px;
+    background-color: #118DA8;
+    border-radius: 6px;
+}
+#header{
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 43px 70px 43px 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FFFFFF;
+}
+nav a{
+    margin-right: 40px;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+#podcast .podcastPhoto{
+    width: 650px;
+    height: 700px;
+}
+#podcast{
+    color: #FFFFFF;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+}
+.podcast-content{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 530px;
+    height: 610px;
+    margin-left: 60px;
+}
+.podcast-content h2{
+    font-size: 70px;
+}
+.podcast-content p{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.ListenOn div img{
+    width: 32px;
+    height: 32px;
+    margin-right: 17px;
+    -webkit-transition: .25s all;
+    -o-transition: .25s all;
+    transition: .25s all;
+}
+.ListenOn div img:hover, .footer-icons img:hover{
+    width: 36px;
+    height: 36px;
+}
+.ListenOn{
+    margin-top: 74px;
+}
+#latestEpisodes{
+    padding: 100px 70px 160px 70px;
+}
+.latestEpisodes-title{
+    color: #FFFFFF;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 40px;
+}
+.latestEpisodes-title h2{
+    font-size: 64px;
+    line-height: 79.2px;
+}
+.latestEpisodes-title a{
+    padding: 12px 15px;
+    color: #FFFFFF;
+    background-color: #118DA8;
+    border-radius: 5px;
+}
+.card{
+    height: 520px;
+    background-color: #000000;
+    border-radius: 10px;
+    color: #FFFFFF;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.latestEpisodes-cards img{
+    width: 389px;
+    height: 432px;
+    margin: 40px;
+}
+.card-content{
+    padding-right: 20px;
+    gap: 28px 15px;
+    width: 778px;
+    margin: 40px 40px 40px 53px;
+}
+.card-content span{
+    color: #118DA8;
+}
+.card-content h2{
+    font-size: 64px;
+    margin-bottom: 28px;
+}
+.card-content button{
+    width: 208px;
+    height: 51px;
+    border-radius: 10px;
+    background-color: #118DA8;
+    color: #FFFFFF;
+}
+.card-content h4{
+    padding: 0 16px;
+    width: 41px;
+    background: #191919;
+}
+.card-content .tips{
+    width: 104px;
+}
+#second-part, #footer{
+    opacity: 0;
+    -webkit-transition: opacity 2.5s ease-in;
+    -o-transition: opacity 2.5s ease-in;
+    transition: opacity 2.5s ease-in;
+}
+.hidden {
+    visibility: hidden;
+}
+#button-block{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#JacobPaulaner-Subscribe{
+    padding: 100px 50px;
+}
+.JacobPaulaner{
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #FFFFFF;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+.JacobPaulaner-content{
+    width: 590px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 30px;
+}
+.JacobPaulaner-content img{
+    width: 112px;
+    height: 112px;
+    margin-bottom: 20px;
+}
+.JacobPaulaner-content span{
+    font-size: 18px;
+    color: #118DA8;
+}
+.JacobPaulaner-content h2{
+    font-size: 65px;
+    line-height: 79.2px;
+    margin-bottom: 28px;
+}
+.JacobPaulaner-content p{
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 33px;
+}
+.JacobPaulaner .mainImg{
+    width: 600px;
+    height: 700px;
+}
+.Subscribe-section{
+    margin-top: 100px;
+}
+.Subscribe-card{
+    width: 1300px;
+    background-color: #000000;
+}
+.Subscribe-card{
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 60px 60px 75px 60px;
+    border-radius: 32px;
+}
+.Subscribe-content{
+    width: 642px;
+    line-height: 27px;
+}
+.Subscribe-content p{
+    color: #118DA8;
+    font-size: 18px;
+}
+.Subscribe-content h2{
+    font-size: 72px;
+    line-height: 79.2px;
+    color: #FFFFFF;
+    font-weight: 400px;
+}
+.Subscribe-input{
+    gap: 20px;
+}
+.name, .email{
+    width: 522px;
+    height: 60px;
+    background-color: #191919;
+    border: 1px solid #191919;
+    border-radius: 6px;
+}
+.Subscribe-input a{
+    color: #FFFFFF;
+    background-color: #118DA8;
+    width: 53px;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+#Reactions{
+    padding: 100px 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 16px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.Reactions-card{
+    width: 313px;
+    background-color: #000000;
+    gap: 20px;
+    padding: 53px 60px 53px 50px;
+    border-radius: 32px;
+}
+.Reactions-card p{
+    font-size: 36px;
+    line-height: 43.2px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.Reactions-card span{
+    color: #FFFFFFB2;
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 400;
+}
+#footer{
+    padding: 100px 70px;
+    color: #FFFFFF;
+    opacity: 0;
+    -webkit-transition: opacity 2.5s ease;
+    -o-transition: opacity 2.5s ease;
+    transition: opacity 2.5s ease;
+}
+
+.footer-castaway{
+    width: 447px;
+}
+.footer-castaway h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.footer-links {
+    font-size: 17px;
+    gap: 16px;
+    line-height: 27px;
+    width: 179px;
+}
+.footer-icons{
+    width: 447px;
+}
+.footer-icons img{
+    margin-right: 17px;
+    -webkit-transition: .25s ease;
+    -o-transition: .25s ease;
+    transition: .25s ease;
+}
+.goToTop, #showButton{
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color:  #118DA8;
+    border-radius: 10px;
+    color: #FFFFFFB2;
+}
+.goToTop{
+    position: fixed; 
+    top: 650px;
+    left: 1300px;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+a:hover{
+    color: #118DA8;
+    -webkit-transform: translateX(3px);
+        -ms-transform: translateX(3px);
+            transform: translateX(3px);
+}
